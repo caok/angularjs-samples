@@ -31,7 +31,8 @@
 <div ng-controller='TasksCtrl'>
   <ul>
     <li ng-repeat='task in tasks'>
-    {{task.title}}, {{task.finished}}
+      <a href="/tasks/{{task.id}}">{{task.title}}</a>
+      {{task.finished}}
     </li>
   </ul>
 </div>

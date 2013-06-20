@@ -25,7 +25,6 @@ bundle install
 //= require angular-resource
 
 
-
 https://github.com/hiravgandhi/angularjs-rails
 https://github.com/railscasts/405-angularjs
 https://github.com/ludicast/angular-rails
