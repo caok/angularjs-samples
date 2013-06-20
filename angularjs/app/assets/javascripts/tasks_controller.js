@@ -1,25 +1,9 @@
-//function TasksCtrl($scope) {
-  //$scope.tasks = [
-    //{"title":"Buy milk", "finished":false},
-    //{"title":"Wash car", "finished":true}
-  //]
-//}
-
 function TasksCtrl($scope, $http) {
   $http.get('/tasks.json').success(function(data) {
     $scope.tasks = data;
-    //console.log(data);
   });
 }
 
-function FirstCtrl($scope) {
-}
-
-function SecondCtrl($scope) {
-  $scope.reversedMessage = function (message) {
-    return message.split("").reverse().join("");
-  }
-}
 
 //---------------------
 function PhoneListCtrl($scope) {

@@ -24,26 +24,16 @@
 
 <%= link_to 'New Task', new_task_path %>
 
+
+
+<h1>Listing tasks by angularjs</h1>
+
 <div ng-controller='TasksCtrl'>
   <ul>
     <li ng-repeat='task in tasks'>
     {{task.title}}, {{task.finished}}
     </li>
   </ul>
-</div>
-
-
-<%#<input type='type' ng-model='data.message'>%>
-<%#<h1>{{data.message}}</h1>%>
-
-<div ng-controller='FirstCtrl'>
-  <input type='type' ng-model='data.message'>
-  <h1>{{data.message}}</h1>
-</div>
-
-<div ng-controller='SecondCtrl'>
-  <input type='type' ng-model='data.message'>
-  <h1>{{reversedMessage(data.message)}}</h1>
 </div>
 
 
