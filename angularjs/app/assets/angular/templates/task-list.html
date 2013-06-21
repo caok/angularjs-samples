@@ -1,6 +1,14 @@
 <h2>angular list</h2>
+
+Search: <input ng-model="query">
+Sort by:
+<select ng-model="orderProp">
+  <option value="title">title</option>
+  <option value="finished">finished</option>
+</select>
+
 <ul>
-  <li ng-repeat='task in tasks'>
+  <li ng-repeat='task in tasks | filter:query | orderBy:orderProp'>
     <a href="#/tasks/{{task.id}}">{{task.title}}</a>
     {{task.finished}}
   </li>
