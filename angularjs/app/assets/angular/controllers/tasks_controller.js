@@ -5,8 +5,9 @@ function TasksCtrl($scope, $http) {
   });
 }
 
-function TaskDetailCtrl($scope, $routeParams) {
-  $scope.id = $routeParams.id;
-  console.log($scope);
+function TaskDetailCtrl($scope, $routeParams, $http) {
+  $http.get('tasks/' + $routeParams.id + '.json').success(function(data) {
+    $scope.task = data;
+  });
 }
 
