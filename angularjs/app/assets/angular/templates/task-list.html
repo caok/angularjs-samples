@@ -1,0 +1,7 @@
+<h2>angular list</h2>
+<ul>
+  <li ng-repeat='task in tasks'>
+    <a href="#/tasks/{{task.id}}">{{task.title}}</a>
+    {{task.finished}}
+  </li>
+</ul>
