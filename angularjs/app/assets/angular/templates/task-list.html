@@ -10,6 +10,6 @@ Sort by:
 <ul>
   <li ng-repeat='task in tasks | filter:query | orderBy:orderProp'>
     <a href="#/tasks/{{task.id}}">{{task.title}}</a>
-    {{task.finished}}
+    {{task.finished | checkfinished}}
   </li>
 </ul>
